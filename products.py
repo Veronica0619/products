@@ -15,3 +15,11 @@ print(products)
 for p in products:
 	print(p[0],'的價格是',p[1])
 
+#字串可以做加乘
+#'abc'+'123'='abc123'
+#'abc'*3 = 'abcabcabc'
+
+with open('products.csv', 'w') as f: # 'w' 是寫入模式 # as 當作
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '\n') #f.wtite 才能真正寫入
+
